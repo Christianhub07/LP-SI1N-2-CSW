@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<style>
+    *{
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body{     
+       background-image: linear-gradient(45deg, #023059 ,   #023E73,  #023059);
+   }
+   main{
+       background-color: #D9D9D9;
+       width: 80%;
+       margin: auto;
+       position:absolute;
+       top: 44%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       border-radius: 30px;
+       padding: 50px;
+       box-shadow: 30px 30px 30px #434545;
+       border: 2px solid #D9D9D9;
+   }
+
+    h1{
+       color:#096CA9;
+       text-align: center;
+       text-shadow: 2px 2px 2px #434545;
+       font-size: 2rem;
+    }
+    h2{
+       
+       text-align: justify;
+    }
+    
+    p{
+       text-align: justify;
+    }
+    a{
+        color: #000000 ;
+    }
+    div{
+        text-align: center;
+    }
+    tr{
+        text-align: center;
+        color: #000000;
+    }
+    td{
+        text-align: justify;
+        color: #000000;
+    }
+    th{
+        color: #024C8C;
+    }
+</style>
+<body>
+    <main>
+        
+        <header>
+            <nav>
+                <ul>
+                    <table border="4">
+                        <thead>
+                            <tr>
+                                <th><a href="index.html">Home</a></th>
+                                <th><a href="curriculo.html">Currículo</a></th>
+                                <th><a href="github.html">GitHub</a></th>
+                                <th><a href="seviços.html">Serviços</a></th>
+                                <th><a href="contato.html">Contato</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <h1>CONTATO</h1>
+        <h2>Preencha o formulário abaixo</h2>
+        <br>
+        <br>
+        <form action="#" method="post">
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Preencha seu nome completo">
+            <br><br>
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+            <br><br>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="email@email.com">
+            <br><br>
+    
+            <label for="pessoa">CPF ou CNPJ</label>
+            <input type="text" id="pessoa" name="pessoa" required placeholder="Informe seu CPF ou CNPJ">
+            <br><br>
+            
+    
+            <label for="pessoa">Tipo Pessoa</label>
+            <select id="servico" name="servico">
+                <option value="pagina-estatica">Pessoa Física</option>
+                <option value="pagina-dinamica">Pessoa Jurídica</option>
+            </select>
+    
+        
+            <label for="horario">Melhor Horário para Contato:</label>
+                <select id="horario" name="horario">
+                    <option value="manha">Entre 9h e 12h</option>
+                    <option value="tarde">Entre 14h e 19h</option>
+                </select>
+        <br><br>
+    
+            <label for="servico">Tipo de Serviço que Deseja:</label>
+            <select id="servico" name="servico">
+                <option value="pagina-estatica">Página Estática - HTML e CSS</option>
+                <option value="pagina-dinamica">Página Dinâmica</option>
+                <option value="pagina-avancada">Página Super Avançada</option>
+            </select>
+            <br><br>
+    
+            <label for="descricao">Descrição</label><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Por favor, descreva de forma breve o serviço que deseja"></textarea>
+            <br><br>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
